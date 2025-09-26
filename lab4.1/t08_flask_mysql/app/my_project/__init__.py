@@ -4,7 +4,7 @@ from typing import Dict, Any
 
 from flask import Flask
 from sqlalchemy_utils import database_exists, create_database
-from route import register_routes
+from .route import register_routes
 from .db import db
 
 SECRET_KEY = "SECRET_KEY"
