@@ -4,7 +4,7 @@ from waitress import serve
 import yaml
 
 from my_project import create_app
-
+#тестую deploy через github action
 DEVELOPMENT_PORT = 5000
 PRODUCTION_PORT = 8080
 HOST = "0.0.0.0"
