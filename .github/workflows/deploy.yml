@@ -22,7 +22,4 @@ jobs:
           script: |
             cd ~/LabsCloud
             git pull origin Lab1
-            cd ~/LabsCloud/lab4.1/t08_flask_mysql/app
-            source venv/bin/activate
-            # якщо Flask запущений як systemd сервіс:
-            sudo systemctl restart flask-app
+            
