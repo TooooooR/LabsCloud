@@ -1,7 +1,7 @@
-from t08_flask_mysql.app.my_project.dao.airplanes_dao import AirplanesDAO
-from t08_flask_mysql.app.my_project.domain.airplanes import Airplane
+from ..dao.airplanes_dao import AirplanesDAO
+from ..domain.airplanes import Airplane
 from sqlalchemy import text
-from t08_flask_mysql.app.my_project.db import db
+from ..db import db
 from sqlalchemy.exc import SQLAlchemyError
 
 class AirplanesService:

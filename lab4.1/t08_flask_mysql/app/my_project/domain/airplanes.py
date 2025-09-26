@@ -1,4 +1,4 @@
-from t08_flask_mysql.app.my_project.db import db
+from ..db import db
 
 class Airplane(db.Model):
     __tablename__ = 'Airplanes'  # Ім'я таблиці має бути в нижньому регістрі для відповідності з ForeignKey

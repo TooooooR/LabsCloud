@@ -1,6 +1,6 @@
-from t08_flask_mysql.app.my_project.db import db
-from t08_flask_mysql.app.my_project.domain.airports import Airport
-from t08_flask_mysql.app.my_project.domain.flightstatus import FlightStatus
+from ..db import db
+from ..domain.airports import Airport
+from ..domain.flightstatus import FlightStatus
 
 class Flight(db.Model):
     __tablename__ = 'Flights'

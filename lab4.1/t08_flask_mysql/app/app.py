@@ -3,7 +3,7 @@ import os
 from waitress import serve
 import yaml
 
-from t08_flask_mysql.app.my_project import create_app
+from my_project import create_app
 
 DEVELOPMENT_PORT = 5000
 PRODUCTION_PORT = 8080

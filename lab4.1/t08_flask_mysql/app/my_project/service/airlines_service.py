@@ -1,4 +1,4 @@
-from t08_flask_mysql.app.my_project.dao.airlines_dao import AirlinesDAO
+from ..dao.airlines_dao import AirlinesDAO
 
 
 class AirlinesService:

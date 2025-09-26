@@ -1,6 +1,6 @@
-from t08_flask_mysql.app.my_project.db import db
+from ..db import db
 from sqlalchemy import text
-from t08_flask_mysql.app.my_project.domain.flights import Flight
+from ..domain.flights import Flight
 
 class FlightsDAO:
     @staticmethod

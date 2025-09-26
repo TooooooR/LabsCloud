@@ -1,6 +1,6 @@
-from t08_flask_mysql.app.my_project.controller.airlines_controller import airlines_bp, airlines_bpp
-from t08_flask_mysql.app.my_project.controller.airplanes_controlle import airplanes_bp, airplanes_detailed_bp, flights_crew_bpp, airplanes_bpp, airplanes_max, airplanes_random
-from t08_flask_mysql.app.my_project.controller.flights_controller import flights_bp, flights_crew_bp
+from ..controller.airlines_controller import airlines_bp, airlines_bpp
+from ..controller.airplanes_controlle import airplanes_bp, airplanes_detailed_bp, flights_crew_bpp, airplanes_bpp, airplanes_max, airplanes_random
+from ..controller.flights_controller import flights_bp, flights_crew_bp
 
 
 def register_routes(app):

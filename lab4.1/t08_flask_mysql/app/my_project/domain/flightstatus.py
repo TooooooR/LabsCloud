@@ -1,4 +1,4 @@
-from t08_flask_mysql.app.my_project.db import db
+from ..db import db
 
 class FlightStatus(db.Model):
     __tablename__ = 'FlightStatus'

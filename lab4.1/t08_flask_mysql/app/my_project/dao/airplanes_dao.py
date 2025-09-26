@@ -1,5 +1,5 @@
-from t08_flask_mysql.app.my_project.db import db
-from t08_flask_mysql.app.my_project.domain.airplanes import Airplane
+from ..db import db
+from ..domain.airplanes import Airplane
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy import text
 

@@ -1,4 +1,4 @@
-from t08_flask_mysql.app.my_project.dao.flights_dao import FlightsDAO
+from ..dao.flights_dao import FlightsDAO
 
 class FlightsService:
     @staticmethod
