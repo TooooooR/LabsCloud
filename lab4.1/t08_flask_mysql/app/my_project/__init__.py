@@ -7,6 +7,8 @@ from sqlalchemy_utils import database_exists, create_database
 from .route import register_routes
 from .db import db
 
+from flasgger import Swagger
+
 SECRET_KEY = "SECRET_KEY"
 SQLALCHEMY_DATABASE_URI = "SQLALCHEMY_DATABASE_URI"
 MYSQL_ROOT_USER = "MYSQL_ROOT_USER"
@@ -21,8 +23,15 @@ def create_app(app_config: Dict[str, Any], additional_config: Dict[str, Any]) ->
     app.config["SECRET_KEY"] = secrets.token_hex(16)
     app.config = {**app.config, **app_config}
 
+    app.config['SWAGGER'] = {
+        'title': 'MyFlask Project API',
+        'uiversion': 3,
+    }
+
     _init_db(app)
     register_routes(app)
+
+    Swagger(app)
 
     return app
 
