@@ -5,8 +5,8 @@ import yaml
 
 from my_project import create_app
 #тестую deploy через github action
-DEVELOPMENT_PORT = 5000
-PRODUCTION_PORT = 8080
+DEVELOPMENT_PORT = 8080
+# PRODUCTION_PORT = 8080
 HOST = "0.0.0.0"
 DEVELOPMENT = "development"
 PRODUCTION = "production"
@@ -23,11 +23,11 @@ if __name__ == '__main__':
 
         if flask_env == DEVELOPMENT:
             config_data = config_data_dict[DEVELOPMENT]
-            create_app(config_data, additional_config).run(port=DEVELOPMENT_PORT, debug=True)
+            create_app(config_data, additional_config).run(host=HOST, port=DEVELOPMENT_PORT, debug=True)
 
-        elif flask_env == PRODUCTION:
-            config_data = config_data_dict[PRODUCTION]
-            serve(create_app(config_data, additional_config), host=HOST, port=PRODUCTION_PORT)
+        # elif flask_env == PRODUCTION:
+        #     config_data = config_data_dict[PRODUCTION]
+        #     serve(create_app(config_data, additional_config), host=HOST, port=PRODUCTION_PORT)
 
         else:
             raise ValueError(f"Check OS environment variable '{FLASK_ENV}'")
