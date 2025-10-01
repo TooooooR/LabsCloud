@@ -7,7 +7,7 @@ airlines_bpp = Blueprint('airlines_insert', __name__)
 @airlines_bpp.route('/', methods=['POST'])
 def insert_dummy_airlines():
     """
-    Швидке заповнення бази даних тестовими 10 записами авіакомпаній.
+    Швидке заповнення бази даних тестовими записами авіакомпаній.
     ---
     tags:
         - Авіакомпанії (Airlines)
