@@ -7,11 +7,11 @@ development:
   DEBUG: True
 #  SQLALCHEMY_DATABASE_URI: 'sqlite://'
 #  SQLALCHEMY_DATABASE_URI: 'sqlite:///device_db.sqlite'
-  SQLALCHEMY_DATABASE_URI: 'mysql://taras:t1a2r3a4s5$$@labs-cloud.mysql.database.azure.com:3306/flightradarlab3'
+  SQLALCHEMY_DATABASE_URI: 'mysql://taras:t1a2r3a4s5$$@labscloud.mysql.database.azure.com:3306/flightradarlab3'
 
 production:
   <<: *common
-  SQLALCHEMY_DATABASE_URI: 'mysql://taras:t1a2r3a4s5$$@labs-cloud.mysql.database.azure.com:3306/flightradarlab3'
+  SQLALCHEMY_DATABASE_URI: 'mysql://taras:t1a2r3a4s5$$@labscloud.mysql.database.azure.com:3306/flightradarlab3'
 
 
 ADDITIONAL_CONFIG:
